@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
   
 app.use(cors({
-  origin: "http://localhost:5173", // local frontend
+  origin: "https://image-frontend-nine-rho.vercel.app", // local frontend
   credentials: true
 }));
 
