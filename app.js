@@ -10,8 +10,13 @@ const { errorHandler } = require("./src/middleware/errorMiddleware");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+const allowedOrigins = [
+  "https://candid-ganache-4af8e6.netlify.app/"
+]
 app.use(cors({
-  origin: "http://localhost:5173",
+  // origin: "http://localhost:5173",
+  origin:allowedOrigins,
   credentials: true
 }));
 
