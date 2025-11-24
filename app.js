@@ -15,8 +15,7 @@ app.use(express.urlencoded({ extended: true }));
   
 
 app.use(cors({
- 
-  origin:"https://candid-ganache-4af8e6.netlify.app/",
+ origin:"https://candid-ganache-4af8e6.netlify.app",
   credentials: true
 }));
 
